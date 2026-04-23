@@ -10,6 +10,6 @@ public class EmployeeStackDemo {
         employee.push("Muna");
         System.out.println(employee);
         employee.push("Said");
-
+        System.out.println("the updated stack is: " + employee);
     }
 }
