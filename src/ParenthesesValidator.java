@@ -12,10 +12,5 @@ public class ParenthesesValidator {
             System.out.println(isBalanced(item));
         }
     }
-    public static boolean  isBalanced(String expression){
-        if(expression=="[]" || expression=="()" || expression=="{}"){
-            return true;
-        }
-        return false;
-    }
+
 }
