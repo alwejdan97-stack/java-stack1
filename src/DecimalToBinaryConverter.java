@@ -9,28 +9,28 @@ public class DecimalToBinaryConverter {
             System.out.println("binary is: "+decimalToBinary(num));
         }
     }
-    public static String decimalToBinary(int decimal){
+    public static String decimalToBinary(int decimal){  //to return the decimal as binary
         if(decimal==0){
             return "0";
         }else if(decimal<0){
             return "not supported";
         }
-        Stack<Integer> decim=new Stack<>();
+        Stack<Integer> decim=new Stack<>(); //creating stack
 
-        while(decimal>0){
+        while(decimal>0){ // to find the remainder and qoutient
             int remainder= decimal % 2;
             int quotient=decimal/2;
             decim.push(remainder);
             decimal=quotient;
         }
-        String str="";
+        String str=""; //return binary of string
         if(!(decim.isEmpty())){
             str=str+decim.pop();
         }
         return str;
     }
-    public static void displayConversionProcess(int decimal){
-        if(decimal==0){
+    /*public static void displayConversionProcess(int decimal){
+        if(decimal==0){  //conversion process
             System.out.println("0");
         }
         Stack<Integer> decim=new Stack<>();
@@ -43,5 +43,5 @@ public class DecimalToBinaryConverter {
             decimal=quotient;
         }
         System.out.println("stack is: "+decim);
-    }
+    }*/
 }
