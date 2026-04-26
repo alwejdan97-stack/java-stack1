@@ -18,6 +18,6 @@ public class ParenthesesValidator {
         }else if(expression.isEmpty()){
             return false;
         }
-        return false;
+
     }
 }
