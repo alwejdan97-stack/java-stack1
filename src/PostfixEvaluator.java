@@ -24,6 +24,8 @@ public class PostfixEvaluator {
                     break;
                     case '/': evaluate.push(opperand1/opperand2);
                     break;
+                    case '%': evaluate.push(opperand1%opperand2);
+                    break;
                 }
             }
         }
