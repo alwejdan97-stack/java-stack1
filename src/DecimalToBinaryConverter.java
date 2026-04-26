@@ -29,5 +29,19 @@ public class DecimalToBinaryConverter {
         }
         return str;
     }
+    public static void displayConversionProcess(int decimal){
+        if(decimal==0){
+            System.out.println("0");
+        }
+        Stack<Integer> decim=new Stack<>();
 
+        while(decimal>0){
+            int remainder= decimal % 2;
+            int quotient = decimal/2;
+            System.out.println(decimal+"  / 2= "+quotient+" | remainde= "+remainder);
+            decim.push(remainder);
+            decimal=quotient;
+        }
+        System.out.println("stack is: "+decim);
+    }
 }
