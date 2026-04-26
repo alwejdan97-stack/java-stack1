@@ -1,7 +1,12 @@
 import java.util.Stack;
 
 public class PostfixEvaluator {
-
+    public static void main(String[] args){
+        String[] text= {"43+","85-","42*"}; // enter multiple strings
+        for(String result:text){ // convert array to string to continue with evaluating method
+            System.out.println(evaluatePostfix(result));
+        }
+    }
     public static Integer evaluatePostfix(String expression){
         Stack<Integer> evaluate=new Stack<>(); //creating the stack
         for(char token: expression.toCharArray()){
