@@ -17,7 +17,7 @@ public class HtmlTagValidator {
         String regex="<(\"[^\"]*\"|'[^']*'|[^'\">])*>"; //regex for checking url
         Pattern pt=Pattern.compile(regex); //compile regex
         if(html==null){ //check if the url empty or not
-
+            return false;
         }
         Matcher mat=pt.matcher(html); //using matcher to check the url
         if(mat.matches()){
