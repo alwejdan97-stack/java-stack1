@@ -1,7 +1,9 @@
 import java.util.Stack;
 
 public class BrowserNavigationSystem {
-
+    static String currentPage;
+    static Stack<String> backStack =new Stack<>();
+    static Stack<String>  forwardStack =new Stack<>();
     public static void main(String[] args){
         BrowserNavigationSystem browser=new BrowserNavigationSystem();
         browser.visitPage("www.google.com");
