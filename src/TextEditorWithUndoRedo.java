@@ -1,7 +1,7 @@
 import java.util.Stack;
 
 public class TextEditorWithUndoRedo {
-    static  Stack<String> undo = new Stack<>();
+
     static   Stack<String> redo = new Stack<>();
     static String currentState ="";
     static int max=10;
