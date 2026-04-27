@@ -29,7 +29,7 @@ public class DecimalToBinaryConverter {
         }
         return str;
     }
-    /*public static void displayConversionProcess(int decimal){
+    public static void displayConversionProcess(int decimal){
         if(decimal==0){  //conversion process
             System.out.println("0");
         }
@@ -43,5 +43,5 @@ public class DecimalToBinaryConverter {
             decimal=quotient;
         }
         System.out.println("stack is: "+decim);
-    }*/
+    }
 }
