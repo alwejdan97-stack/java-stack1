@@ -23,7 +23,7 @@ public class BrowserNavigationSystem {
     public static void visitPage(String url){
         //String currentPage="www.youtube.com";
         if(currentPage != null){
-
+            backStack.push(currentPage);
         }
         forwardStack.clear();
         currentPage=url;
